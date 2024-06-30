@@ -7,13 +7,12 @@ int gcd(int a, int b) {
   }
 }
 int main() {
-  int numberOfInput;
+  int numberOfInput,gcdPair1=0;
   scanf("%d", &numberOfInput);
   int arrInput[numberOfInput];
   for (int i = 0; i < numberOfInput; i++) {
     scanf("%d", &arrInput[i]);   
   }
-  int gcdPair1 = 0;
   gcdPair1 = gcd(arrInput[0],arrInput[1]);
   for(int i=2;i<numberOfInput;i++){
     gcdPair1 = gcd(gcdPair1,arrInput[i+1]);
