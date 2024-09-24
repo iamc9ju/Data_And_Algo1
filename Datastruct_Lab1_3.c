@@ -30,5 +30,7 @@ int main() {
     gcdPair1 = gcd(gcdPair1,arrInput[i+1]);
   }
   printf("%d",gcdPair1);
+  printf("Test");
 return 0;
+
 }
